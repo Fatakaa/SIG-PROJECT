@@ -2,7 +2,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>COPYRIGHT &copy; SIG WISATA BANYUMAS 2021</span>
+            <span>COPYRIGHT &copy; CAFE & WORKSPACE DENPASAR 2023</span>
         </div>
     </div>
 </footer>

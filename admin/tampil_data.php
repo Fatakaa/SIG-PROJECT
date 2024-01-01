@@ -26,20 +26,21 @@ include "../koneksi.php";
 
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Wisata Kabupaten Banyumas</h6>
+                            <h6 class="m-0 font-weight-bold text-dark">Data Cafe & Workspace Denpasar</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>NO</th>
-                                            <th>Nama Wisata</th>
+                                            <th>No.</th>
+                                            <th>Nama Cafe & Workspace</th>
                                             <th>Alamat</th>
-                                            <th>Harga Tiket</th>
+                                            <th>Foto Suasana</th>
+                                            <th>Foto Menu</th>
                                             <th>Latitude</th>
                                             <th>Longitude</th>
-                                            <th>Aksi</th>
+                                            <th width="10%">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -48,25 +49,42 @@ include "../koneksi.php";
                                         $data = mysqli_query($koneksi, "select * from wisata");
                                         while ($d = mysqli_fetch_array($data)) {
                                             $no++;
-                                        ?>
+                                            ?>
                                             <tr>
-                                                <td><?php echo $no ?></td>
-                                                <td><b><a href="detail_data.php?id_wisata=<?php echo $d['id_wisata']; ?> "> <?php echo $d['nama_wisata']; ?> </a> </b></td>
-                                                <td><?php echo $d['alamat']; ?></td>
-                                                <td>Rp. <?php echo $d['harga_tiket']; ?></td>
-                                                <td><?php echo $d['latitude']; ?></td>
-                                                <td><?php echo $d['longitude']; ?></td>
                                                 <td>
-                                                    <a href="edit_data.php?id_wisata=<?php echo $d['id_wisata']; ?> " class="btn-sm btn-primary"><span class="fas fa-edit"></a>
-                                                    <a href="hapus_aksi.php?id_wisata=<?php echo $d['id_wisata']; ?>" class="btn-sm btn-danger"><span class="fas fa-trash"></a>
+                                                    <?php echo $no ?>
+                                                </td>
+                                                <td><b><a href="detail_data.php?id_wisata=<?php echo $d['id_wisata']; ?> ">
+                                                            <?php echo $d['nama_wisata']; ?>
+                                                        </a> </b></td>
+                                                <td>
+                                                    <?php echo $d['alamat']; ?>
+                                                </td>
+                                                <td><button class="btn btn-info" id="seePict" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">Lihat
+                                                        Foto</button>
+                                                </td>
+                                                <td>Foto Menu
+                                                </td>
+                                                <td>
+                                                    <?php echo $d['latitude']; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $d['longitude']; ?>
+                                                </td>
+                                                <td>
+                                                    <a href="edit_data.php?id_wisata=<?php echo $d['id_wisata']; ?> "
+                                                        class="btn-sm btn-primary"><span class="fas fa-edit"></a>
+                                                    <a href="hapus_aksi.php?id_wisata=<?php echo $d['id_wisata']; ?>"
+                                                        class="btn-sm btn-danger"><span class="fas fa-trash"></a>
                                                 </td>
                                             </tr>
-                            </div>
-                        <?php
+                                </div>
+                                <?php
                                         }
-                        ?>
-                        </tbody>
-                        </table>
+                                        ?>
+                            </tbody>
+                            </table>
 
                         </div>
                     </div>

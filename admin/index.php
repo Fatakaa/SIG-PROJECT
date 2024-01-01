@@ -23,16 +23,16 @@ include "../koneksi.php";
                 <br>
                 <br>
                 <br>
-                <center><img src="img/banyumas.png" alt="banyumaslogo" width="150px"> </center>
+                <center><img src="img/cafe-logo.jpg" alt="banyumaslogo" width="150px"> </center>
                 <br>
                 <h2>
-                    <center><b>SISTEM INFORMASI GEOGRAFIS </b> </center>
+                    <center><b>CAFE & WORKSPACE</b> </center>
                 </h2>
                 <h2>
-                    <center><b>OBJEK WISATA KABUPATEN BANYUMAS </b> </center>
+                    <center><b>DENPASAR </b> </center>
                 </h2>
                 <h2>
-                    <center><a href="../index.php"><button class="btn btn-primary" type="button" href="../index.php">Lihat Web</button></a></center>
+                    <center><a href="../index.php"><button class="btn btn-dark" type="button" href="../index.php">Lihat Web</button></a></center>
                 </h2>
 
             </div>

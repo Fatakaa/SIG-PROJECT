@@ -2,11 +2,11 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" >
         <div class="sidebar-brand-icon ">
-            <img class="rounded-circle" src="img/banyumas.png" width="45px" height="45px" alt="...">
+            <img class="rounded-circle" src="img/cafe-logo.jpg" width="45px" height="45px" alt="...">
         </div>
-        <div class="sidebar-brand-text mx-3">SIG Wisata Banyumas</div>
+        <div class="sidebar-brand-text mx-3" >MENU</div>
 
     </a>
 
@@ -28,7 +28,7 @@
     <li class="nav-item">
         <a class="nav-link" href="tampil_data.php">
             <i class="fas fa-fw fa-user-friends"></i>
-            <span>Data Wisata</span></a>
+            <span>Data Cafe & Workspace</span></a>
     </li>
 
     <li class="nav-item">

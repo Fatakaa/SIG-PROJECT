@@ -16,22 +16,22 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Tambah Data Tempat Wisata</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Tambah Data Cafe & Workspace</h1>
                     </div>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Tambah Data</h6>
+                            <h6 class="m-0 font-weight-bold text-dark">Tambah Data</h6>
                         </div>
                         <div class="card-body">
 
                             <!-- Main content -->
                             <form class="form-horizontal style-form" style="margin-top: 10px;" action="tambah_aksi.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-2 control-label">Nama Wisata</label>
+                                    <label class="col-sm-2 col-sm-2 control-label">Nama Cafe</label>
                                     <div class="col-sm-6">
-                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Wisata" required />
+                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Cafe & Workspace" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -41,15 +41,15 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Deskripsi</label>
+                                    <label class="col-sm-2 col-sm-4 control-label">Foto Suasana</label>
                                     <div class="col-sm-6">
                                         <input name="deskripsi" class="form-control" type="file" multiple placeholder="Deskripsi" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Harga Tiket</label>
+                                    <label class="col-sm-2 col-sm-4 control-label">Foto Menu</label>
                                     <div class="col-sm-6">
-                                        <input name="harga_tiket" class="form-control" type="file" multiple type="text" placeholder="Harga Tiket" required />
+                                        <input name="harga_tiket" class="form-control" type="file" type="text" placeholder="Harga Tiket" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -67,7 +67,7 @@
                                 <div class="form-group" style="margin-bottom: 20px;">
                                     <label class="col-sm-2 col-sm-4 control-label"></label>
                                     <div class="col-sm-8">
-                                        <input type="submit" value="Simpan" class="btn btn-sm btn-primary" />
+                                        <input type="submit" value="Simpan" class="btn btn-sm btn-success" />
                                     </div>
                                 </div>
                                 <div style="margin-top: 20px;"></div>
