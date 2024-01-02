@@ -130,7 +130,7 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
     <div class="row d-flex align-items-center justify-content-center">
       <div class="about-content col-lg-12">
         <h1 class="text-white">
-          Detail Informasi Geografis Wisata
+          Detail Informasi Cafe & Workshop
         </h1>
 
       </div>
@@ -146,48 +146,36 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
       <div class="col-md-7" data-aos="fade-up" data-aos-delay="200">
         <div class="panel panel-info panel-dashboard">
           <div class="panel-heading centered">
-            <h2 class="panel-title"><strong>Informasi Wisata </strong></h4>
+            <h2 class="panel-title"><strong>Informasi Cafe & Workshop</strong></h4>
           </div>
           <div class="panel-body">
             <table class="table">
-              <tr>
+            <tr>
                 <!-- <th>Item</th> -->
                 <th>Detail</th>
               </tr>
               <tr>
-                <td>Nama Cafe</td>
+                <td>Nama Wisata</td>
                 <td>
-                  <h5>
-                    <?php echo $nama_wisata ?>
-                  </h5>
+                  <h5><?php echo $nama_wisata ?></h5>
                 </td>
               </tr>
               <tr>
                 <td>Alamat</td>
                 <td>
-                  <h5>
-                    <?php echo $alamat ?>
-                  </h5>
+                  <h5><?php echo $alamat ?></h5>
                 </td>
               </tr>
               <tr>
                 <td>Deskripsi</td>
                 <td>
-                  <button class="btn btn-primary text-uppercase" id="seePict" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Lihat Foto</button>
-                  <!-- <h5>
-                    <?php echo $deskripsi ?>
-                  </h5> -->
+                  <h5><?php echo $deskripsi ?></h5>
                 </td>
               </tr>
               <tr>
-                <td>Harga Tiket</td>
+                <td>Kisaran Menu</td>
                 <td>
-                  <button class="btn btn-primary text-uppercase" id="seeMenu" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2">Lihat Menu</button>
-                  <!-- <h5>Rp.
-                    <?php echo $harga_tiket ?>
-                  </h5> -->
+                  <h5>Rp. <?php echo $harga_tiket ?></h5>
                 </td>
               </tr>
             </table>
@@ -227,74 +215,6 @@ $title = "Detail dan Lokasi : " . $nama_wisata;
   </div>
   <!-- /.modal-dialog -->
 </div>
-
-<section>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Foto Suasana</h5>
-        </div>
-        <div class="modal-body">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/img/cta-bg.jpg" class="d-block w-100" alt="Foto 1">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/cta-bg2.jpg" class="d-block w-100" alt="Foto 2">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="Foto 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Foto Menu</h5>
-        </div>
-        <div class="modal-body">
-          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-            data-bs-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <!-- End about-info Area -->
 <?php include "footer.php"; ?>

@@ -96,15 +96,6 @@
               </span></h1>
             <br>
           </div>
-          <?php
-          include_once "countsmk.php";
-          $obj2 = json_decode($data);
-          $smkn = "";
-          foreach ($obj2->results as $item2) {
-            $smkn .= $item2->smk;
-          }
-          ?>
-
 
         </div>
 

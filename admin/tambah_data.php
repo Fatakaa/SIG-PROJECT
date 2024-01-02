@@ -27,41 +27,48 @@
                         <div class="card-body">
 
                             <!-- Main content -->
-                            <form class="form-horizontal style-form" style="margin-top: 10px;" action="tambah_aksi.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                            <form class="form-horizontal style-form" style="margin-top: 10px;" action="tambah_aksi.php"
+                                method="post" enctype="multipart/form-data" name="form1" id="form1">
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-2 control-label">Nama Cafe</label>
                                     <div class="col-sm-6">
-                                        <input name="nama_wisata" type="text" class="form-control" placeholder="Nama Cafe & Workspace" required />
+                                        <input name="nama_wisata" type="text" class="form-control"
+                                            placeholder="Nama Cafe & Workspace" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Alamat</label>
                                     <div class="col-sm-6">
-                                        <input name="alamat" class="form-control" type="text" placeholder="Alamat" required />
+                                        <input name="alamat" class="form-control" type="text" placeholder="Alamat"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Foto Suasana</label>
+                                    <label class="col-sm-2 col-sm-4 control-label">Deskripsi</label>
                                     <div class="col-sm-6">
-                                        <input name="deskripsi" class="form-control" type="file" multiple placeholder="Deskripsi" required />
+                                        <input name="deskripsi" class="form-control" type="text" placeholder="Deskripsi"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 col-sm-4 control-label">Foto Menu</label>
+                                    <label class="col-sm-2 col-sm-4 control-label">Kisaran Harga</label>
                                     <div class="col-sm-6">
-                                        <input name="harga_tiket" class="form-control" type="file" type="text" placeholder="Harga Tiket" required />
+                                        <input name="harga_tiket" class="form-control" type="text" type="text"
+                                            placeholder="Rp. - Rp." required />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Latitude</label>
                                     <div class="col-sm-6">
-                                        <input name="latitude" class="form-control" type="text" placeholder="-7.3811577" required />
+                                        <input name="latitude" class="form-control" type="text" placeholder="-7.3811577"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Longitude</label>
                                     <div class="col-sm-6">
-                                        <input name="longitude" class="form-control" type="text" placeholder="109.2550945" required />
+                                        <input name="longitude" class="form-control" type="text"
+                                            placeholder="109.2550945" required />
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-bottom: 20px;">

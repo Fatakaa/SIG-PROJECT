@@ -33,11 +33,10 @@ include "../koneksi.php";
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No.</th>
-                                            <th>Nama Cafe & Workspace</th>
+                                            <th>NO</th>
+                                            <th>Nama Wisata</th>
                                             <th>Alamat</th>
-                                            <th>Foto Suasana</th>
-                                            <th>Foto Menu</th>
+                                            <th>Kisaran Harga</th>
                                             <th>Latitude</th>
                                             <th>Longitude</th>
                                             <th width="10%">Aksi</th>
@@ -60,11 +59,8 @@ include "../koneksi.php";
                                                 <td>
                                                     <?php echo $d['alamat']; ?>
                                                 </td>
-                                                <td><button class="btn btn-info" id="seePict" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">Lihat
-                                                        Foto</button>
-                                                </td>
-                                                <td>Foto Menu
+                                                <td>Rp.
+                                                    <?php echo $d['harga_tiket']; ?>
                                                 </td>
                                                 <td>
                                                     <?php echo $d['latitude']; ?>
